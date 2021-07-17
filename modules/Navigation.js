@@ -32,14 +32,14 @@ export default function Navigation() {
     const [isDesktop] = useMediaQuery('(min-width: 500px)')
     const { isOpen, onClose, onOpen } = useDisclosure();
     return (
-        <Flex p="2" height="36" alignItems="flex-start" bgGradient="linear(to-b, gray.900, gray.700)">
+        <Flex p="2" height="52" alignItems="flex-start" bgGradient="linear(to-b, gray.900, gray.700)">
             <HStack align="flex-end" width="full" spacing="18">
                 <Heading>
                     Puisi Berbicara
                 </Heading>
                 {
                     isDesktop ? (
-                        <HStack align="flex-end" spacing="6">
+                        <HStack ml="12" align="flex-end" spacing="6">
                             <Menu />
                         </HStack>
                     ) : (
