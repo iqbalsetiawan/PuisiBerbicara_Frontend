@@ -43,7 +43,7 @@ function ColorModeToggler(props) {
 }
 
 export default function Navigation() {
-    const [isDesktop] = useMediaQuery('(min-width: 500px)')
+    const [isDesktop] = useMediaQuery('(min-width: 600px)')
     const { isOpen, onClose, onOpen } = useDisclosure();
     const { colorMode } = useColorMode();
 
@@ -68,7 +68,7 @@ export default function Navigation() {
                                     <Menu />
                                 </HStack>
                                 <Spacer />
-                                <ColorModeToggler />
+                                <ColorModeToggler variant="ghost" />
                             </>
                         ) : (
                             <>
@@ -95,12 +95,14 @@ export default function Navigation() {
                                         pos="absolute"
                                         top="10"
                                         right="10"
+                                        variant="ghost"
                                         onClick={onClose}
                                     >
                                         <CloseIcon />
                                     </IconButton>
                                     <ColorModeToggler
                                         pos="absolute"
+                                        variant="ghost"
                                         bottom="10"
                                         left="10"
                                     />
