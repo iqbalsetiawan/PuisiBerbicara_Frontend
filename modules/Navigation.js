@@ -88,8 +88,9 @@ export default function Navigation() {
                                     left="0"
                                     width="100%"
                                     height="100vh"
-                                    backgroundColor="gray.800"
-                                    opacity="0.8"
+                                    marginInlineStart="unset !important"
+                                    backgroundColor={colorMode === 'dark' ? "gray.800" : 'wheat'}
+                                    opacity={colorMode === 'dark' ? '0.8' : 1}
                                 >
                                     <IconButton
                                         pos="absolute"
