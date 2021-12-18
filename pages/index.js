@@ -1,6 +1,10 @@
 import { Fragment } from 'react'
 import Head from 'next/head';
-import { Center, Heading } from '@chakra-ui/react';
+
+import { Flex, Spacer, Heading, IconButton, Box } from '@chakra-ui/react';
+import { HamburgerIcon } from '@chakra-ui/icons'
+
+import Navigation from '../modules/Navigation';
 
 export default function Home() {
   return (
@@ -8,11 +12,9 @@ export default function Home() {
       <Head>
         <title>Puisi berbicara</title>
       </Head>
-      <Center>
-        <Heading>
-          Hello World
-        </Heading>
-      </Center>
+      <div>
+        <Navigation />
+      </div>
     </Fragment>
   )
 }
